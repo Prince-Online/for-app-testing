@@ -57,7 +57,6 @@ const fetchUrl = 'https://script.google.com/macros/s/AKfycbzglW9a3xCTAKrwEj0zd4Q
         saveButton.onclick = () => savePost(item);
         itemDiv.appendChild(saveButton);
 
-
         container.appendChild(itemDiv);
       });
     }
