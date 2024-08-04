@@ -523,13 +523,12 @@ input[type="email"], input[type="text"], input[type="password"], input[type="dat
 	text-align: left;
     margin-left: 10px;
     font-size: 22px;
-    margin-top: 12px;
 }
 .news-class{
 	font-size: 20px;
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 21px;
+    margin-top: 10px;
 }
 a {
   text-decoration: none !important;
@@ -568,5 +567,8 @@ a {
 	color: #FFF;
     font-size: 20px;
     text-align: center;
-    margin-top: 59%;
+    margin-top: 80%;
+}
+.saved-icon {
+	color: red;
 }
