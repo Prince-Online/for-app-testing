@@ -21,7 +21,7 @@ body {
     font-size: 20px;
 }
 .app-icon {
-    margin-left: 10px;
+    margin-left: 5%;
     width: 50px;
     margin-top: 10px;
     border-radius: 125px;
@@ -119,24 +119,18 @@ a {
     color: #FFF;
     overflow: hidden;
 }
-.user,.arrow-up {
-    margin-left: 190px;
-}
 .user{
-	border: 2.7px solid #FFF;
-	padding: 8px;
-	border-radius: 25px;
 	width: 24px;
-	height: 24px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
+    margin-top: 6px;
+    margin-left: 64%;
+    max-width: 400px;
+    height: 24px;
 }
 .bookmark {
     margin-left: 25px;
 }
 .header a {
-    font-size: 23px;
+    font-size: 26px;
 }
 #userDetails {
       display: none;
@@ -519,6 +513,7 @@ input[type="email"], input[type="text"], input[type="password"], input[type="dat
     .loading-text {
       font-size: 1.5em;
       text-align: center;
+      color: #FFF;
       margin-top: 80%;
     }
 .item:last-child {
@@ -559,10 +554,19 @@ a {
 	margin-left: 15px;
 }
 .back-button{
-	padding: 4px;
-	font-size: 25px;
-	margin-left: 160px;
-	color: #dc3545;
+	display: none;
+}
+.arrow-up{
 	background: transparent;
 	border: none;
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 60%;
+    max-width: 400px;
+}
+#savedContainer p{
+	color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 59%;
 }
