@@ -1,0 +1,20 @@
+function doGet(e) {
+  var sheet = SpreadsheetApp.openById('1YAjcaiJmrkqF864Aga7GOuKQM3P-wuSkcBbVDETRjOY').getSheetByName('Users');
+  var data = sheet.getDataRange().getValues();
+  var result = [];
+  
+  for (var i = 1; i < data.length; i++) {
+    result.push({
+      username: data[i][2], // C column
+      password: data[i][9], // J column
+      email: data[i][1], // B column
+      name: data[i][3], // D column
+      age: data[i][5], // F column
+      mobile: data[i][7], // H column
+      gender: data[i][8], // I column
+      image: data[i][10] // K column
+    });
+  }
+  
+  return ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
+}
